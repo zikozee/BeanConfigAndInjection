@@ -15,6 +15,7 @@ public class GreetingServiceConfig {//remember we use small case first letter to
     //Idea  here is that instead of having config spread over multiple classes. we can centralize them in a
     //config class and make dem beans
 
+
     @Bean
     GreetingServiceFactory greetingServiceFactory(GreetingRepository repository){
         return new GreetingServiceFactory(repository);
